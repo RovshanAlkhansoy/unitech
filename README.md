@@ -1,7 +1,7 @@
 ROVSHAN ALKHANOV 
 
 Unitech application qısa zaman və sıx qrafik ərzində hazırlanmışdır. Bu səbəbdən bəzi şeylər unudulmuş ola bilər,
-bəzi xətalar, bəzi yalnışlıqlar ola bilər, qaçınılmazdır. Lakin bu zaman kəsiyində 2 full time işlə paralel tələb 
+bəzi xətalar, bəzi yanlışlıqlar ola bilər, qaçınılmazdır. Lakin bu zaman kəsiyində 2 full time işlə paralel tələb 
 olunanları etməyə çalışdım.
 
 İlk növbədə tələblərdə olmadığı halda postman collection və environment hazır etdim ki, bütün apilər rahatlıqla 
@@ -13,7 +13,7 @@ komputerimdə niyəsə düzgün çalışmır, hətta docker-compose.file vasitə
 Register Login sadə formada tələb olunmuşdu, lakin mən token vasitəsilə etdim, ancaq access token implementasiya etdim,
 refresh də edilə bilərdi lakin, çox mürəkkəbləşdirmədim.
 
-Tələblərdə Account yaradılması Api yox idi ancaq Get Accounts var idi, şəxsi improvizasiyam ilə yaradılması ilə bağlı  
+Tələblərdə Account yaradılması Api yox idi ancaq Get Accounts var idi, şəxsi improvizasiyam ilə yaradılması ilə bağlı 
 api yazdım və tokendən userid götürüb həmin accounta map etdim. Login olan user öz accpountlarını görür.
 (Yaradıldıqda hamısı active olaraq yaradılıb,save edilir, deactive üçün api yazmaq ya da account yaradıldıqda
 request bodydə götürmək olar),
