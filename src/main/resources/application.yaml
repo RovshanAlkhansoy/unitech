@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: unitech-application
+  security:
+    secret: ${JWT_SECRET_KEY:357638792F423F4428472B4B6250655368566D597133743677397A2443264629}
+  profiles:
+    include:
+      - db
+      - logging
+      - management
+      - server
+  threads:
+    virtual:
+      enabled: true

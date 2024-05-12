@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.unitech.service.impl.MockThirdPartyCurrencyServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-05-12T17:09:06" hostname="Rovshans-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="testFetchCurrencyRate_UnknownPair()" classname="com.app.unitech.service.impl.MockThirdPartyCurrencyServiceTest" time="0.001"/>
+  <testcase name="testFetchCurrencyRate_USD_AZN()" classname="com.app.unitech.service.impl.MockThirdPartyCurrencyServiceTest" time="0.0"/>
+  <testcase name="testFetchCurrencyRate_AZN_TL()" classname="com.app.unitech.service.impl.MockThirdPartyCurrencyServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.unitech.service.impl.CurrencyRateCacheImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-05-12T17:09:06" hostname="Rovshans-MacBook-Pro.local" time="0.033">
+  <properties/>
+  <testcase name="testGetCurrencyRate_NonExistingPair()" classname="com.app.unitech.service.impl.CurrencyRateCacheImplTest" time="0.017"/>
+  <testcase name="testGetCurrencyRate_ExistingPair()" classname="com.app.unitech.service.impl.CurrencyRateCacheImplTest" time="0.005"/>
+  <testcase name="testClear()" classname="com.app.unitech.service.impl.CurrencyRateCacheImplTest" time="0.003"/>
+  <testcase name="testSetCurrencyRate()" classname="com.app.unitech.service.impl.CurrencyRateCacheImplTest" time="0.005"/>
+  <system-out><![CDATA[21:09:02.492 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.app.unitech.service.impl.CurrencyRateCacheImplTest]: CurrencyRateCacheImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:09:02.597 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.app.unitech.UnitechApplication for test class com.app.unitech.service.impl.CurrencyRateCacheImplTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-12T21:09:02.963+04:00  INFO 1094 --- [unitech-application] [    Test worker] c.a.u.s.impl.CurrencyRateCacheImplTest   : Starting CurrencyRateCacheImplTest using Java 21.0.1 with PID 1094 (started by rovshan in /Users/rovshan/Downloads/unitech)
+2024-05-12T21:09:02.965+04:00  INFO 1094 --- [unitech-application] [    Test worker] c.a.u.s.impl.CurrencyRateCacheImplTest   : The following 5 profiles are active: "db", "logging", "management", "redis", "server"
+2024-05-12T21:09:03.515+04:00  INFO 1094 --- [unitech-application] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-12T21:09:03.516+04:00  INFO 1094 --- [unitech-application] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T21:09:03.698+04:00  INFO 1094 --- [unitech-application] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176 ms. Found 3 JPA repository interfaces.
+2024-05-12T21:09:04.108+04:00  INFO 1094 --- [unitech-application] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T21:09:04.157+04:00  INFO 1094 --- [unitech-application] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12T21:09:04.184+04:00  INFO 1094 --- [unitech-application] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-12T21:09:04.269+04:00  INFO 1094 --- [unitech-application] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T21:09:04.290+04:00  INFO 1094 --- [unitech-application] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-12T21:09:04.412+04:00  INFO 1094 --- [unitech-application] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ef277ef
+2024-05-12T21:09:04.413+04:00  INFO 1094 --- [unitech-application] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-12T21:09:04.448+04:00  WARN 1094 --- [unitech-application] [    Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-05-12T21:09:05.085+04:00  INFO 1094 --- [unitech-application] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T21:09:05.141+04:00  INFO 1094 --- [unitech-application] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T21:09:05.979+04:00  INFO 1094 --- [unitech-application] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@561494af, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@362ad436, org.springframework.security.web.context.SecurityContextHolderFilter@36117f63, org.springframework.security.web.header.HeaderWriterFilter@78f2cab9, org.springframework.web.filter.CorsFilter@79beb8a0, org.springframework.security.web.authentication.logout.LogoutFilter@102bce96, com.app.unitech.filter.JWTAuthFilter@7c98bac0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55ed76e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@943184c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b6a20ce, org.springframework.security.web.session.SessionManagementFilter@4afdcdf6, org.springframework.security.web.access.ExceptionTranslationFilter@6b1cc2fb, org.springframework.security.web.access.intercept.AuthorizationFilter@4e502162]
+2024-05-12T21:09:06.366+04:00  INFO 1094 --- [unitech-application] [    Test worker] c.a.u.s.impl.CurrencyRateCacheImplTest   : Started CurrencyRateCacheImplTest in 3.637 seconds (process running for 5.681)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

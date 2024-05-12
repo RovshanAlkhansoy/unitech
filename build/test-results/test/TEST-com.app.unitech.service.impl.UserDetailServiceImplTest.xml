@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.unitech.service.impl.UserDetailServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-05-12T17:09:06" hostname="Rovshans-MacBook-Pro.local" time="0.008">
+  <properties/>
+  <testcase name="testLoadUserByUsername_Success()" classname="com.app.unitech.service.impl.UserDetailServiceImplTest" time="0.002"/>
+  <testcase name="testLoadUserByUsername_UserNotFound()" classname="com.app.unitech.service.impl.UserDetailServiceImplTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

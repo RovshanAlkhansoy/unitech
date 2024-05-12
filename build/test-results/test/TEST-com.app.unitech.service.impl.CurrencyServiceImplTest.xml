@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.unitech.service.impl.CurrencyServiceImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-05-12T17:09:06" hostname="Rovshans-MacBook-Pro.local" time="0.022">
+  <properties/>
+  <testcase name="testGetCurrencyRate_CacheMiss()" classname="com.app.unitech.service.impl.CurrencyServiceImplTest" time="0.006"/>
+  <testcase name="testClearCache()" classname="com.app.unitech.service.impl.CurrencyServiceImplTest" time="0.005"/>
+  <testcase name="testGetCurrencyRate_CacheHit()" classname="com.app.unitech.service.impl.CurrencyServiceImplTest" time="0.006"/>
+  <system-out><![CDATA[2024-05-12T21:09:06.419+04:00  INFO 1094 --- [unitech-application] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.app.unitech.service.impl.CurrencyServiceImplTest]: CurrencyServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-12T21:09:06.421+04:00  INFO 1094 --- [unitech-application] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.app.unitech.UnitechApplication for test class com.app.unitech.service.impl.CurrencyServiceImplTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
